@@ -34,8 +34,14 @@ for i in valores:
     sumatoriaLineal += iteraciones_lineal(i, L) / 5
     sumatoriaBinario += iteraciones_binaria(i, L) / 5
 
-print("Lineal: ", sumatoriaLineal)
-print("Binario: ", sumatoriaBinario)
+##acá vamos a poner la respuesta de la primera tabla
+
+print("____________________________________________________")
+print("|   Algoritmo   | Iteraciones Promedio             |")
+print("---------------------------------------------------")
+print("| Lineal        |   ", sumatoriaLineal, "                         |")
+print("| Binario:      |   ", sumatoriaBinario, "           |")
+print("---------------------------------------------------")
 
 
 def f(x):
@@ -76,6 +82,12 @@ def pasosBiseccion(a, b, epsilon):
 
             i = i + 1
 
-print("----------------------------------")
-print("Exhaustiva: ", pasosExhaustiva(-4, -3, 0.01, 0.0001))
-print("Biseccion: ", pasosBiseccion(-4, -3, 0.01))
+print()
+
+print("________________________________________")
+print("|   Algoritmo   | Iteraciones Promedio |")
+print("---------------------------------------")
+print("|  Exhaustiva   | ", pasosExhaustiva(-4, -3, 0.01, 0.0001), "               |")
+print("|  Biseccion    | ", pasosBiseccion(-4, -3, 0.01), "                  |")
+print("---------------------------------------")
+
